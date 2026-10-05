@@ -53,7 +53,7 @@ const certifications = [
 
   {
     id: "database-systems",
-    number: "05",
+    number: "06",
     title: "Introduction to Database Systems",
     issuer: "NPTEL · IIT Madras",
     period: "Jan – Apr 2025",
@@ -66,7 +66,7 @@ const certifications = [
 
   {
     id: "python",
-    number: "06",
+    number: "07",
     title: "Crash Course on Python",
     issuer: "Google · Coursera",
     period: "June 2024",
@@ -75,6 +75,18 @@ const certifications = [
     distinction: null,
     featured: false,
     certificate: "/certificates/crash-course-python.pdf",
+  },
+  {
+    id: "strategic-communication",
+    number: "05",
+    title: "Strategic Communication for Sustainable Development",
+    issuer: "NPTEL · IIT Kharagpur",
+    period: "Jul – Aug 2026",
+    duration: "4 weeks",
+    score: "87%",
+    distinction: "Elite · Top 5%",
+    featured: true,
+    certificate: "/certificates/strategic-communication-sustainable-development.pdf",
   },
 ];
 
