@@ -18,7 +18,7 @@ function About() {
           {/* Profile Image */}
           <div className="about-image-wrapper">
             <img
-              src="/images/profile.jpg"
+              src={`${import.meta.env.BASE_URL}images/profile.jpg`}
               alt="Thurupu Tharun"
               className="about-profile-image"
             />

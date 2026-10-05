@@ -134,10 +134,11 @@ function CertificationCard({ certification }) {
 
       {/* Certificate Button */}
       <a
-        href={certification.certificate}
+        href={`${import.meta.env.BASE_URL}${certification.certificate.replace(/^\/+/, "")}`}
         target="_blank"
         rel="noreferrer"
         className="certificate-button"
+        
       >
         View Certificate <span>↗</span>
       </a>
