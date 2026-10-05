@@ -1,0 +1,81 @@
+const certifications = [
+  {
+    id: "azure-ai",
+    number: "01",
+    title: "Microsoft Certified: Azure AI Fundamentals",
+    issuer: "Microsoft",
+    period: "June 2025",
+    duration: null,
+    score: null,
+    distinction: "Microsoft Certified",
+    featured: true,
+    certificate: "/certificates/azure-ai-fundamentals.pdf",
+  },
+
+  {
+    id: "oracle-genai",
+    number: "02",
+    title: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+    issuer: "Oracle",
+    period: "September 2025",
+    duration: null,
+    score: null,
+    distinction: "Certified Professional",
+    featured: true,
+    certificate: "/certificates/oracle-generative-ai-professional.pdf",
+  },
+
+  {
+    id: "machine-learning",
+    number: "03",
+    title: "Introduction to Machine Learning",
+    issuer: "NPTEL · IIT Kharagpur",
+    period: "Jul – Sep 2025",
+    duration: "8 weeks",
+    score: "63%",
+    distinction: "Elite",
+    featured: true,
+    certificate: "/certificates/machine-learning.pdf",
+  },
+
+  {
+    id: "compiler-design",
+    number: "04",
+    title: "Compiler Design",
+    issuer: "NPTEL · IIT Kharagpur",
+    period: "Jan – Apr 2026",
+    duration: "12 weeks",
+    score: "63%",
+    distinction: "Elite",
+    featured: true,
+    certificate: "/certificates/compiler-design.pdf",
+  },
+
+  {
+    id: "database-systems",
+    number: "05",
+    title: "Introduction to Database Systems",
+    issuer: "NPTEL · IIT Madras",
+    period: "Jan – Apr 2025",
+    duration: "12 weeks",
+    score: "55%",
+    distinction: null,
+    featured: false,
+    certificate: "/certificates/database-systems.pdf",
+  },
+
+  {
+    id: "python",
+    number: "06",
+    title: "Crash Course on Python",
+    issuer: "Google · Coursera",
+    period: "June 2024",
+    duration: null,
+    score: null,
+    distinction: null,
+    featured: false,
+    certificate: "/certificates/crash-course-python.pdf",
+  },
+];
+
+export default certifications;
