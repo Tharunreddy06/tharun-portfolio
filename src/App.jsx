@@ -6,6 +6,7 @@ import Certifications from "./components/Certifications";
 import Experience from "./components/Experience";
 import Research from "./components/Research";
 import Contact from "./components/Contact";
+
 function App() {
   return (
     <div className="portfolio">
@@ -66,14 +67,31 @@ function App() {
               systems that combine machine learning, data, and automation.
             </p>
 
+            {/* =========================
+                HERO BUTTONS
+            ========================= */}
+
             <div className="hero-buttons">
 
               <a href="#projects" className="primary-button">
                 Explore My Work →
               </a>
 
-              <a href="#contact" className="secondary-button">
-                Get In Touch
+              <a
+                href={`${import.meta.env.BASE_URL}resume/Thurupu-Tharun-Resume.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="secondary-button"
+              >
+                View Resume
+              </a>
+
+              <a
+                href={`${import.meta.env.BASE_URL}resume/Thurupu-Tharun-Resume.pdf`}
+                download="Thurupu-Tharun-Resume.pdf"
+                className="secondary-button"
+              >
+                Download Resume
               </a>
 
             </div>
@@ -100,7 +118,9 @@ function App() {
           </div>
 
 
-          {/* Hero Visual */}
+          {/* =========================
+              HERO VISUAL
+          ========================= */}
 
           <div className="hero-visual">
 
@@ -166,14 +186,14 @@ function App() {
 
 
         {/* =========================
-            RESEARCH PLACEHOLDER
+            RESEARCH
         ========================= */}
 
         <Research />
 
 
         {/* =========================
-            CONTACT PLACEHOLDER
+            CONTACT
         ========================= */}
 
         <Contact />
