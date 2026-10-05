@@ -203,7 +203,7 @@ const projects = [
 
     status: "Working / partially implemented",
 
-    github: "https://github.com/AkramKhan543719/AI-Crime-Hotspot-Prediction",
+    github: "https://github.com/Tharunreddy06/AI_Powered_crime_hotspot_prediction",
 
     demo: null,
 
