@@ -1,37 +1,46 @@
 const projects = [
   {
-    id: "jobgenie",
+    id: "meta-tpot",
     number: "01",
-    title: "JobGenie",
-    subtitle: "AI-Powered Resume & Job Matching Platform",
-    category: "NLP · AI · Recruitment Technology",
+    title:
+      "Meta-TPOT: Automatic Configuration of TPOT Evolutionary Search Using Dataset-Level Meta-Learning",
+    subtitle: "Meta-Learning-Based AutoML",
+    category: "AutoML · Meta-Learning · Evolutionary Optimization",
 
     shortDescription:
-      "An AI-driven recruitment platform designed to improve resume screening through multilingual NLP, skills-based job matching, and explainable candidate evaluation.",
+      "Developed a meta-learning-based AutoML system using TPOT and Random Forest to automatically predict optimal evolutionary search parameters (population size and generations) from dataset characteristics `[N, F, P]`, enabling automated machine-learning pipeline optimization and evaluation.",
 
     problem:
-      "Traditional recruitment can depend heavily on manual resume screening and keyword-based filtering, which may overlook candidates with different terminology or languages. JobGenie explores a more skills-oriented and transparent recruitment workflow.",
+      "TPOT's evolutionary search performance depends on population and generation settings, while selecting suitable values manually requires substantial experimentation for each dataset.",
 
     objective:
-      "Develop an intelligent recruitment system that supports resume analysis, candidate–job matching, skill-gap analysis, personalized recommendations, and explainable candidate evaluation.",
+      "Predict effective TPOT population and generation parameters from dataset-level characteristics so that automated pipeline optimization can begin with a more suitable search configuration.",
 
     approach: [
-      "Resume and job description input",
-      "OCR and multilingual text processing",
-      "NLP and mBERT-based processing",
-      "Skills and candidate information extraction",
-      "AI-based job matching",
-      "Matching and skill-gap analysis",
-      "Recruiter and job-seeker outputs",
+      "Extract dataset characteristics represented by `[N, F, P]`",
+      "Train meta-learning models for evolutionary search configuration",
+      "Use Random Forest to predict population size and generations",
+      "Configure TPOT with predicted search parameters",
+      "Optimize machine-learning pipelines through TPOT",
+      "Evaluate resulting pipelines and automated configurations",
     ],
 
     technologies: [
-      "mBERT",
-      "Natural Language Processing",
-      "OCR",
-      "AI-based Skill Gap Analysis",
+      "TPOT",
+      "Random Forest",
+      "Python",
+      "Meta-Learning",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
     ],
 
+    status: "Implemented AutoML research project",
+
+    github: "https://github.com/Tharunreddy06/Meta_Learning_TPOT",
+
+    contribution:
+      "Individually designed and implemented the meta-learning workflow, dataset characteristic representation, Random Forest configuration models, TPOT integration, pipeline optimization, and evaluation process.",
   },
 
   {
@@ -209,6 +218,97 @@ const projects = [
 
     contribution:
       "Worked on the overall system concept, historical and real-time data design, crime-domain filtering, geographic drill-down, Leaflet-based visualization, country and state analysis, data normalization, and the planned integration of real-time NLP and predictive components.",
+  },
+
+  {
+    id: "jobgenie",
+    number: "05",
+    title: "JobGenie",
+    subtitle: "AI-Powered Resume & Job Matching Platform",
+    category: "NLP · AI · Recruitment Technology",
+
+    shortDescription:
+      "An AI-driven recruitment platform designed to improve resume screening through multilingual NLP, skills-based job matching, and explainable candidate evaluation.",
+
+    problem:
+      "Traditional recruitment can depend heavily on manual resume screening and keyword-based filtering, which may overlook candidates with different terminology or languages. JobGenie explores a more skills-oriented and transparent recruitment workflow.",
+
+    objective:
+      "Develop an intelligent recruitment system that supports resume analysis, candidate–job matching, skill-gap analysis, personalized recommendations, and explainable candidate evaluation.",
+
+    approach: [
+      "Resume and job description input",
+      "OCR and multilingual text processing",
+      "NLP and mBERT-based processing",
+      "Skills and candidate information extraction",
+      "AI-based job matching",
+      "Matching and skill-gap analysis",
+      "Recruiter and job-seeker outputs",
+    ],
+
+    technologies: [
+      "mBERT",
+      "Natural Language Processing",
+      "OCR",
+      "AI-based Skill Gap Analysis",
+    ],
+  },
+
+  {
+    id: "basic-projects",
+    number: "06",
+    title: "Applied ML & Web Projects",
+    subtitle: "Grade, Salary, Loan, and Productivity Applications",
+    category: "Machine Learning · Web Development · Applications",
+
+    shortDescription:
+      "A collection of practical projects: Grade Predictor, Salary Prediction, Loan Approval Prediction, and Productivity Management System.",
+
+    problem:
+      "Build and deploy accessible applications that apply machine-learning prediction and productivity workflows to common academic, finance, and personal-management use cases.",
+
+    objective:
+      "Create working web-integrated applications that demonstrate applied machine learning, backend or frontend integration, and useful end-to-end functionality.",
+
+    approach: [
+      "Collect and prepare application-specific datasets",
+      "Train and evaluate prediction models",
+      "Integrate models with web applications",
+      "Build user-facing result and management workflows",
+      "Package and publish projects on GitHub",
+    ],
+
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Web Integration",
+      "HTML",
+      "CSS",
+    ],
+
+    status: "Completed practical projects",
+
+    links: [
+      {
+        label: "Grade Predictor",
+        url: "https://github.com/Tharunreddy06/Grade-Predictor-1",
+      },
+      {
+        label: "Salary Prediction",
+        url: "https://github.com/Tharunreddy06/Salary-Prediction",
+      },
+      {
+        label: "Loan Approval Prediction",
+        url: "https://github.com/Tharunreddy06/Loan_Approval_prediction",
+      },
+      {
+        label: "Productivity Management System",
+        url: "https://github.com/Tharunreddy06/productivity-management-system",
+      },
+    ],
+
+    contribution:
+      "Developed the prediction and productivity applications, integrated their workflows with web interfaces where applicable, and maintained the source repositories.",
   },
 ];
 

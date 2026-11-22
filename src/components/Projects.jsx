@@ -109,30 +109,47 @@ function Projects() {
                 </div>
               </div>
 
-              <div className="case-study-block">
-                <span className="case-study-label">
-                  RESULTS / PERFORMANCE
-                </span>
+              {selectedProject.results && (
+                  <div className="case-study-block">
+                    <span className="case-study-label">
+                      RESULTS / PERFORMANCE
+                    </span>
 
-                {Array.isArray(selectedProject.results) ? (
-                  <ul className="results-list">
-                    {selectedProject.results.map((result) => (
-                      <li key={result}>{result}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p>{selectedProject.results}</p>
+                    {Array.isArray(selectedProject.results) ? (
+                      <ul className="results-list">
+                        {selectedProject.results.map((result) => (
+                          <li key={result}>{result}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>{selectedProject.results}</p>
+                    )}
+                  </div>
                 )}
-              </div>
 
-              <CaseStudyBlock
-                title="My Contribution"
-                content={selectedProject.contribution}
-              />
+              {selectedProject.contribution && (
+                <CaseStudyBlock
+                  title="My Contribution"
+                  content={selectedProject.contribution}
+                />
+              )}
 
             </div>
 
             <div className="case-study-footer">
+
+              {selectedProject.links &&
+                selectedProject.links.map((link) => (
+                  <a
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="case-study-button secondary"
+                  >
+                    {link.label} →
+                  </a>
+                ))}
 
               {selectedProject.github && (
                 <a

@@ -254,7 +254,7 @@ function Research() {
                   </span>
 
                   <h3>
-                    Quantum Recommendation Systems
+                    Enhanced Personalized recommendation framework for ecommerce and retail applications using hybrid recommendation engine
                   </h3>
                 </div>
 
@@ -265,16 +265,20 @@ function Research() {
               </div>
 
               <p>
-                Exploring the intersection of classical machine learning
-                and quantum computing for recommendation systems, with
-                interest in scalability, data sparsity, and complex
-                product selection.
+                A B2B recommendation engine that solves cold-start problems
+                for e-commerce and social platforms by fusing social media
+                engagement signals (likes, shares, follows) with product
+                catalog data. The engine uses confidence-adaptive weighting
+                and MMR re-ranking to deliver personalized, diverse
+                recommendations with explainable “why” explanations. Built
+                as a B2B API service that platforms can integrate to enhance
+                their recommendation capabilities.
               </p>
 
               <div className="research-tags">
-                <span>Quantum Computing</span>
-                <span>Recommendation Systems</span>
-                <span>Machine Learning</span>
+                <span>Hybrid Recommendation Engine</span>
+                <span>Social Signal Fusion</span>
+                <span>Cold-Start Problem</span>
               </div>
 
             </div>
